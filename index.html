@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>projeto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    ss
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- caixa principal - agrupar todos os elementos da nossa tela-->
+    <div id="container">
+      <div id="profile">
+        <span></span>
+        <img src="./assets/imagem davi bmw.png" alt="Foto de perfil" />
+        <p class="inter-davi">@Davi Ferreira</p>
+      </div>
+
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+
+      <!-- UL = é um agrupador/lista -->
+      <ul>
+        <!-- LI = é o item da minha lista -->
+        <li>
+          <a href="#" target="_blank">
+            <ion-icon name="document-text-outline"></ion-icon>
+            Portifolio
+          </a>
+        </li>
+
+        <li>
+          <a href="#" target="_blank">
+            <ion-icon name="school-outline"></ion-icon>
+            Formações
+          </a>
+        </li>
+
+        <li>
+          <a href="#" target="_blank">
+            <ion-icon name="cut-outline"></ion-icon>
+            Reservar meu corte
+          </a>
+        </li>
+
+        <li>
+          <a href="#" target="_blank">
+            <ion-icon name="chatbubble-outline"></ion-icon>
+            Whatsapp
+          </a>
+        </li>
+      </ul>
+
+      <div id="social-links">
+        <a
+          href="https://instagram.com/supremoxxt?igshid=YmMyMTA2M2Y="
+          target="_blank"
+        >
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a
+          href="http://www.linkedin.com/in/davi-ferreira-b93891228"
+          target="_blank"
+        >
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="https://vm.tiktok.com/ZMN2JKQoS/" target="_blank">
+          <ion-icon name="logo-tiktok"></ion-icon>
+        </a>
+        <a href="https://www.twitch.tv/supremoxxt?sr=a" target="_blank">
+          <ion-icon name="logo-twitch"></ion-icon>
+        </a>
+        <a href="https://x.com/Supremoxxt1" target="_blank">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCB_gpWei2427HYmHfqdZrjA/playlists"
+          target="_blank"
+        >
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+      </div>
+
+      <!-- <iframe src="https://beautypets.vercel.app/" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    </div>
+
+    <footer>Feito por Davi Ferreira © 2025</footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      // definindo variaveis:
+      const caixaProfile = document.getElementById("profile")
+
+      // adicionando evento de click:
+      caixaProfile.addEventListener("click", () => {
+        // definir mensagem de feedback no console:
+        console.log("cliquei aqui!")
+      })
+
+      // adicionando evento de hover (passando o mause em cima do elemento):
+      caixaProfile.addEventListener("mouseenter", () => {
+        // definir mensagem de feedback no console:
+        console.log("passei o mouse aqui!")
+      })
+
+      // adicionando evento de mouseleave (sair com o mouse do elemento):
+      caixaProfile.addEventListener("mouseleave", () => {
+        // definir mensagem de feedback no console:
+        console.log("sai com o mouse daqui!")
+      })
+    </script>
+
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
